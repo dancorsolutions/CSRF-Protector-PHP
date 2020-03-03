@@ -32,6 +32,13 @@ if (!defined('__CSRF_PROTECTOR_COOKIE_CONFIG__')) {
          * @var bool
          */
         public $secure = false;
+        
+        /**
+         * Variable: $http_only
+         * http_only parameter for setcookie method
+         * @var bool
+         */
+        public $http_only = false;
 
         /**
          * Variable: $expire
@@ -51,6 +58,7 @@ if (!defined('__CSRF_PROTECTOR_COOKIE_CONFIG__')) {
                 if (isset($cfg['path'])) $this->path = $cfg['path'];
                 if (isset($cfg['domain'])) $this->domain = $cfg['domain'];
                 if (isset($cfg['secure'])) $this->secure = (bool) $cfg['secure'];
+                if (isset($cfg['http_only'])) $this->http_only = (bool) $cfg['http_only'];
                 if (isset($cfg['expire']) && $cfg['expire']) $this->expire = (int)$cfg['expire'];
             }
         }

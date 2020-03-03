@@ -9,7 +9,7 @@ Add to your project using packagist
  ```json
  {
     "require": {
-        "owasp/csrf-protector-php": "dev-master"
+        "dancorsolutions/csrf-protector-php": "dev-master"
     }
 }
 ```

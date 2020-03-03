@@ -413,7 +413,8 @@ if (!defined('__CSRF_PROTECTOR__')) {
                 time() + self::$cookieConfig->expire,
                 self::$cookieConfig->path,
                 self::$cookieConfig->domain,
-                (bool) self::$cookieConfig->secure);
+                (bool) self::$cookieConfig->secure,
+                (bool) self::$cookieConfig->$http_only);
         }
 
         /*
