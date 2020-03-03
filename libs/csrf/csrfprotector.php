@@ -414,7 +414,7 @@ if (!defined('__CSRF_PROTECTOR__')) {
                 self::$cookieConfig->path,
                 self::$cookieConfig->domain,
                 (bool) self::$cookieConfig->secure,
-                (bool) self::$cookieConfig->$http_only);
+                (bool) self::$cookieConfig->http_only);
         }
 
         /*
