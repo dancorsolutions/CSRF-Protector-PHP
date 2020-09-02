@@ -38,7 +38,7 @@ if (!defined('__CSRF_PROTECTOR_COOKIE_CONFIG__')) {
          * http_only parameter for setcookie method
          * @var bool
          */
-        public $http_only = false;
+        public $http_only = true;
 
         /**
          * Variable: $expire
